@@ -14,6 +14,7 @@
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
     <ApplicationInsightsResourceId>/subscriptions/56129b4a-e571-42ab-ac0b-036c7b3b84ad/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/Bifrost</ApplicationInsightsResourceId>
+    <DevelopmentServerPort>60208</DevelopmentServerPort>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.targets" Condition="'$(VSToolsPath)' != ''" />
 </Project>
