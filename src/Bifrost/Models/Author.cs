@@ -1,11 +1,17 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Bifrost.Models {
 
 	public class Author {
 
-		public String Name { get; set; }
+        [Key]
+        public int Id { get; set; }
 
+        [Required]
+        public String Name { get; set; }
+
+        [Required]
 		public String Email { get; set; }
 
 		public override string ToString() {

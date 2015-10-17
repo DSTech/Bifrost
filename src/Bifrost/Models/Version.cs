@@ -3,8 +3,11 @@ using System;
 namespace Bifrost.Models {
 
 	public class Version {
+
 		public UInt16 Major { get; set; }
+
 		public UInt16 Minor { get; set; }
+
 		public UInt16 Patch { get; set; }
 
 		public static Version Parse(string versionString) {

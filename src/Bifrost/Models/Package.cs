@@ -10,13 +10,32 @@ namespace Bifrost.Models {
 		[Key]
 		public int Id { get; set; }
 
-		[Required]
+        /// <summary>
+        /// Package Name
+        /// </summary>
+        /// <value>
+        /// Name
+        /// </value>
+        [Required]
 		public String Name { get; set; }
 
-		[Required]
+        /// <summary>
+        /// Authors of this Package
+        /// </summary>
+        /// <value>
+        /// The authors.
+        /// </value>
+        [Required]
 		public ICollection<Author> Authors { get; set; }
 
-		[Required]
+        /// <summary>
+        /// Builds of this Package
+        /// i.e. different versions
+        /// </summary>
+        /// <value>
+        /// Builds
+        /// </value>
+        [Required]
 		public ICollection<Build> Builds { get; set; }
 	}
 }

@@ -5,7 +5,10 @@ using System.Collections.Generic;
 
 namespace Bifrost.Models {
 
-	public class VersionSpec {
+    /// <summary>
+    /// Version Specification, defines a which versions of a package can be used in a dependency.
+    /// </summary>
+    public class VersionSpec {
 
 		public Version Minimum { get; set; }
 
